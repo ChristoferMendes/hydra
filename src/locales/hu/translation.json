@@ -14,7 +14,9 @@
     "paused": "{{title}} (Szünet)",
     "downloading": "{{title}} ({{percentage}} - Letöltés…)",
     "filter": "Könyvtár szűrése",
-    "home": "Főoldal"
+    "home": "Főoldal",
+    "orderByRecentTooltip": "Játékok rendezése a legutóbb hozzáadottak szerint",
+    "filterByPlayableTooltip": "Játékok szűrése, amelyeknek kiválasztott futtatható fájljuk van"
   },
   "header": {
     "search": "Keresés",

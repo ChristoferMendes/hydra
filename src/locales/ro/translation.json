@@ -14,7 +14,9 @@
     "paused": "{{title}} (Pauzat)",
     "downloading": "{{title}} ({{percentage}} - Se descarcă...)",
     "filter": "Filtrează biblioteca",
-    "home": "Acasă"
+    "home": "Acasă",
+    "orderByRecentTooltip": "Ordonează jocurile după cele mai recent adăugate",
+    "filterByPlayableTooltip": "Filtrează jocurile care au un fișier executabil selectat"
   },
   "header": {
     "search": "Caută jocuri",

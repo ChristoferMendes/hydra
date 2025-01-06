@@ -14,7 +14,9 @@
     "paused": "{{title}} (Gepauzeerd)",
     "downloading": "{{title}} ({{percentage}} - Downloading…)",
     "filter": "Filter Bibliotheek",
-    "home": "Home"
+    "home": "Home",
+    "orderByRecentTooltip": "Sorteer games op meest recent toegevoegd",
+    "filterByPlayableTooltip": "Filter games die een uitvoerbaar bestand hebben geselecteerd"
   },
   "header": {
     "search": "Zoek spellen",

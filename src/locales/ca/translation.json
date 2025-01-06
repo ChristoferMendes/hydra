@@ -30,7 +30,9 @@
     "search_results": "Resultats de la cerca",
     "settings": "Configuració",
     "version_available_install": "Hi ha disponible la versió {{version}}. Feu clic aquí per a reiniciar i instal·lar-la.",
-    "version_available_download": "Hi ha disponible la versió {{version}}. Feu clic aquí per a baixar-la."
+    "version_available_download": "Hi ha disponible la versió {{version}}. Feu clic aquí per a baixar-la.",
+    "orderByRecentTooltip": "Ordena els jocs per la data d'afegit més recent",
+    "filterByPlayableTooltip": "Filtra els jocs que tenen un executable seleccionat"
   },
   "bottom_panel": {
     "no_downloads_in_progress": "Cap baixada en curs",

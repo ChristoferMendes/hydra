@@ -14,7 +14,9 @@
     "paused": "{{title}} (Duraklatıldı)",
     "downloading": "{{title}} ({{percentage}} - İndiriliyor…)",
     "filter": "Kütüphaneyi filtrele",
-    "home": "Ana menü"
+    "home": "Ana menü",
+    "orderByRecentTooltip": "En son eklenen oyunlara göre sırala",
+    "filterByPlayableTooltip": "Seçilen çalıştırılabilir dosyaya sahip oyunları filtrele"
   },
   "header": {
     "search": "Ara",

@@ -26,7 +26,9 @@
     "game_has_no_executable": "Game has no executable selected",
     "sign_in": "Sign in",
     "friends": "Friends",
-    "need_help": "Need help?"
+    "need_help": "Need help?",
+    "orderByRecentTooltip": "Order games by most recently added",
+    "filterByPlayableTooltip": "Filter games that have an executable selected"
   },
   "header": {
     "search": "Search games",

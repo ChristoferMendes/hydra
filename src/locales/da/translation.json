@@ -24,7 +24,9 @@
     "queued": "{{title}} (I køen)",
     "game_has_no_executable": "Spillet har ikke nogen eksekverbar fil valgt",
     "sign_in": "Log ind",
-    "friends": "Venner"
+    "friends": "Venner",
+    "orderByRecentTooltip": "Sorter spil efter senest tilføjet",
+    "filterByPlayableTooltip": "Filtrér spil der har en eksekverbar fil valgt"
   },
   "header": {
     "search": "Søg efter spil",

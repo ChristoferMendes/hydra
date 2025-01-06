@@ -20,7 +20,9 @@
     "home": "Головна",
     "game_has_no_executable": "Не було вибрано файл для запуску гри",
     "queued": "{{title}} в черзі",
-    "sign_in": "Увійти"
+    "sign_in": "Увійти",
+    "orderByRecentTooltip": "Сортувати ігри за недавно доданими",
+    "filterByPlayableTooltip": "Фільтрувати ігри, які мають вибраний виконавчий файл"
   },
   "header": {
     "search": "Пошук",

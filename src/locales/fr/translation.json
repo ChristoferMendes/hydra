@@ -14,7 +14,9 @@
     "paused": "{{title}} (En pause)",
     "downloading": "{{title}} ({{percentage}} - Téléchargement en cours…)",
     "filter": "Filtrer la bibliothèque",
-    "home": "Page d’accueil"
+    "home": "Page d’accueil",
+    "orderByRecentTooltip": "Trier les jeux par les plus récemment ajoutés",
+    "filterByPlayableTooltip": "Filtrer les jeux qui ont un exécutable sélectionné"
   },
   "header": {
     "search": "Recherche",

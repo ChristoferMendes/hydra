@@ -25,7 +25,9 @@
     "queued": "{{title}} (Na fila)",
     "game_has_no_executable": "O jogo não tem um executável selecionado",
     "sign_in": "Iniciar sessão",
-    "friends": "Amigos"
+    "friends": "Amigos",
+    "orderByRecentTooltip": "Ordenar jogos por mais recentemente adicionados",
+    "filterByPlayableTooltip": "Filtrar jogos que têm um executável selecionado"
   },
   "header": {
     "search": "Procurar jogos",

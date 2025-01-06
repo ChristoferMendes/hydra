@@ -3,6 +3,29 @@ import { recipe } from "@vanilla-extract/recipes";
 
 import { SPACING_UNIT, vars } from "../../theme.css";
 
+export const filtersContainer = style({
+  display: "flex",
+  gap: `${SPACING_UNIT * 2}px`,
+});
+
+export const filterButton = recipe({
+  base: {
+    display: "flex",
+    alignItems: "center",
+    gap: `${SPACING_UNIT}px`,
+    color: "gray",
+    cursor: "pointer",
+    transition: "background-color ease 0.7s",
+  },
+  variants: {
+    active: {
+      true: {
+        color: "white",
+      },
+    },
+  },
+});
+
 export const sidebar = recipe({
   base: {
     backgroundColor: vars.color.darkBackground,

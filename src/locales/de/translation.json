@@ -20,7 +20,9 @@
     "home": "Home",
     "queued": "{{title}} (In Warteschlange)",
     "game_has_no_executable": "Spiel hat keine ausführbare Datei gewählt",
-    "sign_in": "Anmelden"
+    "sign_in": "Anmelden",
+    "orderByRecentTooltip": "Spiele nach zuletzt hinzugefügten sortieren",
+    "filterByPlayableTooltip": "Spiele filtern, die eine ausführbare Datei ausgewählt haben"
   },
   "header": {
     "search": "Spiele suchen",

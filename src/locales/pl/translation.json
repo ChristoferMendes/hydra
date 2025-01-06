@@ -14,7 +14,9 @@
     "paused": "{{title}} (Zatrzymano)",
     "downloading": "{{title}} ({{percentage}} - Pobieranie…)",
     "filter": "Filtruj biblioteke",
-    "home": "Główna"
+    "home": "Główna",
+    "orderByRecentTooltip": "Sortuj gry według ostatnio dodanych",
+    "filterByPlayableTooltip": "Filtruj gry, które mają wybrany plik wykonywalny"
   },
   "header": {
     "search": "Szukaj",

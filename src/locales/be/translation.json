@@ -14,7 +14,9 @@
     "paused": "{{title}} (Спынена)",
     "downloading": "{{title}} ({{percentage}} - Сцягванне…)",
     "filter": "Фільтар бібліятэкі",
-    "home": "Галоўная"
+    "home": "Галоўная",
+    "orderByRecentTooltip": "Сартаваць гульні па апошнімі дададзенымі",
+    "filterByPlayableTooltip": "Фільтраваць гульні, у якіх выбраны выканальны файл"
   },
   "header": {
     "search": "Пошук",

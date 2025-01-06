@@ -20,7 +20,13 @@ import { buildGameDetailsPath } from "@renderer/helpers";
 import SteamLogo from "@renderer/assets/steam-logo.svg?react";
 import { SidebarProfile } from "./sidebar-profile";
 import { sortBy } from "lodash-es";
-import { CommentDiscussionIcon } from "@primer/octicons-react";
+import {
+  ClockIcon,
+  CommentDiscussionIcon,
+  PlayIcon,
+} from "@primer/octicons-react";
+import { useSidebarFilters } from "./use-sidebar-filters";
+import { Tooltip } from "../tooltip/tooltip";
 
 const SIDEBAR_MIN_WIDTH = 200;
 const SIDEBAR_INITIAL_WIDTH = 250;
@@ -36,6 +42,7 @@ export function Sidebar() {
   const navigate = useNavigate();
 
   const [filteredLibrary, setFilteredLibrary] = useState<LibraryGame[]>([]);
+  const { toggleFilter, toggleSort, filters } = useSidebarFilters();
 
   const [isResizing, setIsResizing] = useState(false);
   const [sidebarWidth, setSidebarWidth] = useState(
@@ -44,8 +51,12 @@ export function Sidebar() {
 
   const location = useLocation();
 
-  const sortedLibrary = useMemo(() => {
+  function sortByTitle(library: LibraryGame[]) {
     return sortBy(library, (game) => game.title);
+  }
+
+  const sortedLibrary = useMemo(() => {
+    return sortByTitle(library);
   }, [library]);
 
   const { hasActiveSubscription } = useUserDetails();
@@ -82,8 +93,25 @@ export function Sidebar() {
     );
   };
 
+  function filterReadyToPlay(baseLibrary?: LibraryGame[]) {
+    if (baseLibrary) {
+      setFilteredLibrary(
+        baseLibrary.filter((game) => game.executablePath !== null)
+      );
+      return;
+    }
+
+    setFilteredLibrary((previous) =>
+      previous.filter((game) => game.executablePath !== null)
+    );
+  }
+
   useEffect(() => {
-    setFilteredLibrary(sortedLibrary);
+    if (filters.readyToPlay) {
+      filterReadyToPlay(sortedLibrary);
+    } else {
+      setFilteredLibrary(sortedLibrary);
+    }
 
     if (filterRef.current) {
       filterRef.current.value = "";
@@ -161,6 +189,38 @@ export function Sidebar() {
     }
   };
 
+  function setSortByCreatedAt() {
+    setFilteredLibrary((previous) =>
+      sortBy(previous, (game) => game.createdAt).reverse()
+    );
+  }
+
+  function setSortByTitle() {
+    setFilteredLibrary((previous) => sortByTitle(previous));
+  }
+
+  function removeReadyToPlayFilter() {
+    setFilteredLibrary(sortedLibrary);
+  }
+
+  useEffect(() => {
+    if (!filters.readyToPlay) {
+      removeReadyToPlayFilter();
+      return;
+    }
+
+    filterReadyToPlay();
+  }, [filters.readyToPlay]);
+
+  useEffect(() => {
+    if (!filters.sorts.createdAt) {
+      setSortByTitle();
+      return;
+    }
+
+    setSortByCreatedAt();
+  }, [filters.sorts.createdAt, library]);
+
   return (
     <aside
       ref={sidebarRef}
@@ -204,14 +264,35 @@ export function Sidebar() {
 
           <section className={styles.section}>
             <small className={styles.sectionTitle}>{t("my_library")}</small>
+            <section className={styles.filtersContainer}>
+              <Tooltip content={t("filterByPlayableTooltip")}>
+                <button
+                  onClick={() => toggleFilter("readyToPlay")}
+                  className={styles.filterButton({
+                    active: filters.readyToPlay,
+                  })}
+                >
+                  <PlayIcon size={14} />
+                </button>
+              </Tooltip>
 
+              <Tooltip content={t("orderByRecentTooltip")}>
+                <button
+                  onClick={() => toggleSort("createdAt")}
+                  className={styles.filterButton({
+                    active: filters.sorts.createdAt,
+                  })}
+                >
+                  <ClockIcon size={14} />
+                </button>
+              </Tooltip>
+            </section>
             <TextField
               ref={filterRef}
               placeholder={t("filter")}
               onChange={handleFilter}
               theme="dark"
             />
-
             <ul className={styles.menu}>
               {filteredLibrary.map((game) => (
                 <li

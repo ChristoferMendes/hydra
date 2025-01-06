@@ -22,7 +22,9 @@
     "catalogue": "카탈로그",
     "downloads": "다운로드",
     "search_results": "검색 결과",
-    "settings": "설정"
+    "settings": "설정",
+    "orderByRecentTooltip": "가장 최근에 추가된 게임으로 정렬",
+    "filterByPlayableTooltip": "실행 가능한 실행 파일이 선택된 게임을 필터링"
   },
   "bottom_panel": {
     "no_downloads_in_progress": "진행중인 다운로드 없음",

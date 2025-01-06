@@ -25,7 +25,9 @@
     "queued": "{{title}} (Järjekorras)",
     "game_has_no_executable": "Mängul pole käivitusfaili valitud",
     "sign_in": "Logi sisse",
-    "friends": "Sõbrad"
+    "friends": "Sõbrad",
+    "orderByRecentTooltip": "Mängud kõige hiljutisemalt lisatud",
+    "filterByPlayableTooltip": "Filtreeri mänge, millel on valitud käivitusfail"
   },
   "header": {
     "search": "Otsi mänge",

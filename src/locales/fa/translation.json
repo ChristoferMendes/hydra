@@ -14,7 +14,9 @@
     "paused": "{{title}} (متوقف شده)",
     "downloading": "{{title}} ({{percentage}} - در حال دانلود…)",
     "filter": "فیلتر کردن کتابخانه",
-    "home": "خانه"
+    "home": "خانه",
+    "orderByRecentTooltip": "بر اساس جدیدترین اضافه شده مرتب کردن",
+    "filterByPlayableTooltip": "کتابخانه را بر اساس قابل اجرا فیلتر کنید"
   },
   "header": {
     "search": "جستجوی  بازی‌ها",

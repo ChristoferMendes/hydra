@@ -14,7 +14,9 @@
     "paused": "{{title}} (In pausa)",
     "downloading": "{{title}} ({{percentage}} - Download…)",
     "filter": "Filtra libreria",
-    "home": "Home"
+    "home": "Home",
+    "orderByRecentTooltip": "Ordina i giochi per i più recentemente aggiunti",
+    "filterByPlayableTooltip": "Filtra i giochi che hanno un eseguibile selezionato"
   },
   "header": {
     "search": "Cerca",
